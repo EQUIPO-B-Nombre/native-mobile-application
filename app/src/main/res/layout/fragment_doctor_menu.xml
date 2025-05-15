@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.doctor.DoctorMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FD94B2">
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/square"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circle_shape"
+            android:clipToOutline="true"
+            app:layout_constraintBottom_toTopOf="@+id/imageView23"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/doctor_menu_back_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/menu_icon"
+            app:layout_constraintBottom_toTopOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/doctor_menu_home_button"
+            android:layout_width="351dp"
+            android:layout_height="60dp"
+            android:src="@drawable/rounded_square_pink"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView23"
+            app:layout_constraintVertical_bias="0.057" />
+
+        <ImageView
+            android:id="@+id/doctor_patients_menu_button"
+            android:layout_width="351dp"
+            android:layout_height="60dp"
+            android:src="@drawable/rounded_square_pink"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView23"
+            app:layout_constraintTop_toBottomOf="@+id/doctor_menu_home_button"
+            app:layout_constraintVertical_bias="0.027" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:src="@drawable/patients_patient_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_patients_menu_button"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_patients_menu_button"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="@+id/doctor_patients_menu_button"
+            app:layout_constraintTop_toTopOf="@+id/doctor_patients_menu_button" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:src="@drawable/home_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_menu_home_button"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_menu_home_button"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="@+id/doctor_menu_home_button"
+            app:layout_constraintTop_toTopOf="@+id/doctor_menu_home_button" />
+
+        <ImageView
+            android:id="@+id/doctor_logout_menu_button"
+            android:layout_width="351dp"
+            android:layout_height="60dp"
+            android:src="@drawable/rounded_square_pink"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doctor_my_profile_button"
+            app:layout_constraintVertical_bias="0.046" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar sesión"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_logout_menu_button"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_logout_menu_button"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toStartOf="@+id/doctor_logout_menu_button"
+            app:layout_constraintTop_toTopOf="@+id/doctor_logout_menu_button" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logout_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_logout_menu_button"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_logout_menu_button"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="@+id/doctor_logout_menu_button"
+            app:layout_constraintTop_toTopOf="@+id/doctor_logout_menu_button" />
+
+        <ImageView
+            android:id="@+id/doctor_my_profile_button"
+            android:layout_width="351dp"
+            android:layout_height="60dp"
+            android:src="@drawable/rounded_square_pink"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+            app:layout_constraintEnd_toEndOf="@+id/imageView23"
+            app:layout_constraintStart_toStartOf="@+id/imageView23"
+            app:layout_constraintTop_toBottomOf="@+id/doctor_patients_menu_button"
+            app:layout_constraintVertical_bias="0.034" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_my_profile_button"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_my_profile_button"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="@+id/doctor_my_profile_button"
+            app:layout_constraintTop_toTopOf="@+id/doctor_my_profile_button" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Página principal"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_menu_home_button"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_menu_home_button"
+            app:layout_constraintHorizontal_bias="0.396"
+            app:layout_constraintStart_toStartOf="@+id/doctor_menu_home_button"
+            app:layout_constraintTop_toTopOf="@+id/doctor_menu_home_button"
+            app:layout_constraintVertical_bias="0.575" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pacientes"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_patients_menu_button"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_patients_menu_button"
+            app:layout_constraintHorizontal_bias="0.311"
+            app:layout_constraintStart_toStartOf="@+id/doctor_menu_home_button"
+            app:layout_constraintTop_toTopOf="@+id/doctor_patients_menu_button" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mi perfil"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_my_profile_button"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_my_profile_button"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="@+id/doctor_my_profile_button"
+            app:layout_constraintTop_toTopOf="@+id/doctor_my_profile_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
